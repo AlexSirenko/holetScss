@@ -1,0 +1,13 @@
+@import 'reset';
+@import 'basic';
+@import 'fonts';
+@import './header/header';
+@import 'components';
+
+@import 'slider/slide';
+@import 'orderForm/form';
+@import 'aboutHotel/aboutHotel';
+
+body {
+    padding-top: 95px;
+}

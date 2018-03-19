@@ -1,0 +1,35 @@
+$font-text-plain: "Roboto", Helvetica, Arial, sans-serif;
+$font-header: "Playfair Display", "Times New Roman", Times, serif;
+$font-label: "Montserrat", Helvetica, Arial, sans-serif;
+
+
+$font-size-nav: 14px;
+$font-size-small: 10px;
+$font-size-btn: 12px;
+
+$font-color-nav: #777;
+$color-second: #C19B76;
+
+$max-width: 1350px;
+
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-header;
+    font-weight: bold;
+}
+h6, label{
+    font-family: $font-label;
+    letter-spacing: 0.08em;
+}
+label {
+    font-size: $font-size-nav;
+    
+}
+
+p {
+    font-family: $font-text-plain;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.8em;
+    color: $font-color-nav;
+}

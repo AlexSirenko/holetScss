@@ -1,0 +1,69 @@
+$color-btn-hover: #000;
+
+.btn-wrap {
+    display: inline-block;
+    width: auto;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid $color-second;
+    padding: 12px 30px;
+    font-family: $font-label;
+    font-size: $font-size-btn;
+    color: $color-second;
+    font-weight: 400;
+    letter-spacing: .08em;
+    transition: .33s all ease;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        border-color: $color-btn-hover;
+        color: $color-btn-hover;
+    }
+}
+.btn-second {
+    background-color: $color-second;
+    color: #fff;
+    &:hover {
+        background-color: $color-btn-hover;
+        color: #fff;
+    }
+}
+@media (min-width: 992px){
+    .btn {
+        padding: 12px 38px;
+        line-height: 2em;
+    }
+}
+
+.input {
+    width: 220px;
+    height: 56px;
+
+    &::placeholder{
+        position: relative;
+        top: 10px;
+        color: #000;
+        font-family: $font-header;
+        font-size: 28px; 
+    }
+    &:hover {
+        background-color: #f8f8f8;
+    }
+}
+
+.select {
+    margin: 0;
+    width: 84px;
+    font-size: 28px;
+    font-family: $font-header;
+    text-align: center;
+
+    &:hover {
+        cursor:pointer;
+        background-color: #f8f8f8;
+    }
+}

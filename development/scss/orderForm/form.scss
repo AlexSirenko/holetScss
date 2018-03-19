@@ -1,0 +1,90 @@
+.section-form {
+    width: 100%;
+    background-color: #fff;
+}
+
+@media (min-width: 768px){
+    .section-form {
+        height: 0;
+    }
+    .form-wrap::after{
+        content: '';
+        position: absolute;
+        height: 203px;
+        background-image: url('../images/form/shadow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+        left: -49px;
+        right: -49px;
+        bottom: -88px;
+        width: 100%;
+        
+    }
+}
+
+.form-wrap {
+    position: relative;
+    width: 1310px / 1366px * 100%;
+    margin: 0 auto;
+    top: -120px;
+    z-index: 4;
+
+    form {
+        padding: 20px;
+        background-color: #fff;
+    }
+}
+
+%displayflex{
+    display: flex;
+    justify-content: space-around;
+}
+.in-form {
+    @extend %displayflex;
+    padding: 40px 0;
+    label {
+        display: block;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.dateType {
+    @extend %displayflex;
+    width: 50%;
+
+    &>div {
+        padding: 20px;
+        width: 290px;
+    }
+    input{
+        padding: 10px 0 14px 5px;
+        margin-top: 10px;
+    }
+}
+.selectAndButton{
+    @extend %displayflex;
+
+    width: 50%;
+
+    &:last-child{
+        padding: 0 20px;
+        a{
+            margin-top: 16%;
+        }
+    }
+}
+.selects {
+    @extend %displayflex;
+    width: 216px;
+
+    &>div {
+        padding: 20px;
+    }
+
+    select {
+        margin-top: 16px;
+    }
+}

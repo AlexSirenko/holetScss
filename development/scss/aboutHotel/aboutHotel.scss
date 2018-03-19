@@ -1,0 +1,40 @@
+.aboutHotel-wrap{
+    width: 100%;
+    min-height: 624px;
+    height: 624px/ 766px * 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+
+    &>div{
+        width: 46%;
+        padding: 0 25px;
+    }
+}
+
+
+.aboutHotel-wrap__discription{
+
+    h6 {
+        text-transform: uppercase;
+    }
+    h2{
+        margin-top: 16px;
+    }
+    p {
+        margin-top: 40px;
+        max-width: 520px;
+    }
+
+    .button-wrap {
+        margin-top: 35px;
+    }
+}
+
+.aboutHotel__image{
+    display: block;
+    width: 98%;
+    padding: 15px;
+
+    background-color: #fff !important;
+}
