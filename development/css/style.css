@@ -59,7 +59,7 @@ h2 {
   font-size: 50px; }
 
 h3 {
-  font-size: 36px; }
+  font-size: 38px; }
 
 h4 {
   font-size: 30px; }
@@ -354,6 +354,23 @@ p {
     cursor: pointer;
     background-color: #f8f8f8; }
 
+.list-marked {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.72; }
+  .list-marked li {
+    position: relative;
+    padding-left: 12px; }
+  .list-marked li::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 3px;
+    width: 3px;
+    background: #777; }
+
 .slide-wrap {
   width: 100%;
   min-height: 624px;
@@ -480,11 +497,12 @@ p {
   min-height: 624px;
   height: 81.46214%;
   display: flex;
-  justify-content: space-around;
-  padding-top: 200px; }
+  justify-content: space-between;
+  padding-top: 240px;
+  padding-bottom: 100px; }
   .aboutHotel-wrap > div {
-    width: 46%;
-    padding: 0 25px; }
+    width: 49%;
+    padding: 0 24px; }
 
 .aboutHotel-wrap__discription h6 {
   text-transform: uppercase; }
@@ -501,9 +519,86 @@ p {
 
 .aboutHotel__image {
   display: block;
-  width: 98%;
+  width: 99%;
   padding: 15px;
   background-color: #fff !important; }
+
+.roomsAndSuits-wrap {
+  padding: 100px 0; }
+
+.roomsAndSuits__header {
+  width: 63%;
+  margin: 0 auto;
+  text-align: center; }
+  .roomsAndSuits__header h2 {
+    margin-top: 18px; }
+  .roomsAndSuits__header p {
+    margin-top: 40px; }
+
+.roomsAndSuits__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 26px; }
+
+.roomsAndSuits__body__post-product {
+  width: 32.21083%;
+  min-width: 400px;
+  margin-top: 50px; }
+
+.post-product__img-wrap {
+  position: relative;
+  width: 100%; }
+  .post-product__img-wrap img {
+    display: block;
+    width: 100%; }
+
+.post-product__img-wrap:hover::before {
+  transition-duration: .33s;
+  border-width: 4px; }
+
+.post-product__img-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 16px solid #f8f8f8;
+  z-index: 1;
+  transition-duration: .33s; }
+
+.post-product__body h3 {
+  position: relative;
+  z-index: 5; }
+  .post-product__body h3 a {
+    z-index: 4;
+    font-weight: 400;
+    transition: .33s ease-out; }
+  .post-product__body h3 a:hover {
+    color: #C19B76; }
+
+.post-product__body ul {
+  margin-top: 15px; }
+
+.post-product__body .btn-wrap {
+  margin-top: 35px; }
+
+.post-product__price {
+  position: relative;
+  top: -15px;
+  z-index: 0;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 400; }
+  .post-product__price .price__sign {
+    position: relative;
+    top: -30px;
+    font-size: 28px; }
+  .post-product__price .price__number {
+    font-size: 100px;
+    line-height: 1; }
+  .post-product__price .price__end {
+    font-size: 18px; }
 
 body {
   padding-top: 95px; }

@@ -67,3 +67,24 @@ $color-btn-hover: #000;
         background-color: #f8f8f8;
     }
 }
+
+
+.list-marked{
+    font-family: $font-text-plain;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.72;
+    li{
+        position: relative;
+        padding-left: 12px;
+    }
+    li::before{
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: 0;
+        height: 3px;
+        width: 3px;
+        background: #777;
+    }
+}

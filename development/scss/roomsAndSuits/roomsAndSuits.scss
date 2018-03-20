@@ -1,0 +1,101 @@
+.roomsAndSuits-wrap{
+    padding: 100px 0;
+}
+
+.roomsAndSuits__header{
+    width: 63%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2{
+        margin-top: 18px;
+    }
+    p {
+        margin-top: 40px;
+    }
+}
+
+.roomsAndSuits__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 26px;
+}
+
+.roomsAndSuits__body__post-product{
+    width: 440px / 1366px * 100%;
+    min-width: 400px;
+    margin-top: 50px;
+}
+
+.post-product__img-wrap {
+    position: relative;
+    width: 100%;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+.post-product__img-wrap:hover{
+    
+    &::before{
+        transition-duration: .33s;
+        border-width: 4px;
+    }
+}
+.post-product__img-wrap::before{
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 16px solid #f8f8f8;
+    z-index: 1;
+    transition-duration: .33s;
+}
+
+.post-product__body{
+
+    h3 {
+        position: relative;
+        z-index: 5;
+        a{  
+            z-index: 4;
+            font-weight: 400;
+            transition: .33s ease-out;
+        }
+        a:hover{
+            color: $color-second;
+        }
+    }
+    ul{
+        margin-top: 15px;
+    }
+
+    .btn-wrap {
+        margin-top: 35px;
+    }
+}
+
+.post-product__price{
+    position: relative;
+    top: -15px;
+    z-index: 0;
+    font-family: $font-header;
+    font-weight: 400;
+
+    .price__sign{
+        position: relative;
+        top: -30px;
+        font-size: 28px;
+    }
+    .price__number{
+        font-size: 100px;
+        line-height: 1;
+    }
+    .price__end{
+        font-size: 18px;
+    }
+}
