@@ -36,6 +36,13 @@
         width: 100%;
     }
 }
+.post-product__img-wrap:hover{
+    
+    &::before{
+        transition-duration: .33s;
+        border-width: 4px;
+    }
+}
 .post-product__img-wrap::before{
     
     content: '';
@@ -48,14 +55,6 @@
     z-index: 1;
     transition-duration: .33s;
 }
-
-.roomsAndSuits__body__post-product:hover{
-    .post-product__img-wrap::before{
-        transition-duration: .33s;
-        border-width: 4px;
-    }
-}
-
 
 .post-product__body{
 
