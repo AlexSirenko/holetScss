@@ -1,0 +1,73 @@
+.diningAndBar-wrap{
+    padding: 100px 0;
+}
+
+.diningAndBar-wrap__header{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    p {
+        margin-top: 40px;
+    }
+}
+.diningAndBar-menu {
+    margin-top: 60px;
+
+    &>div:last-child{
+        margin-top: 50px;
+        text-align: center;
+
+    }
+}
+.food-menu-list{
+    font-family: $font-label;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    li{
+        display: inline-block;
+        padding: 0 15px;
+        a {
+            color: #777;
+        }
+    }
+}
+
+.diningAndBar-menu__body{
+    display: flex;
+    margin-top: 50px;
+    &>div {
+        width: 50%;
+    }
+}
+
+.food-list{
+    li{
+        margin-top: 26px;
+        padding: 0 24px;
+        &>div{
+            display: flex;
+            justify-content: space-between;
+            h4{ 
+                display: inline-block;
+                line-height: 1.8;
+                font-weight: 300;
+            }
+        }
+        p {
+            width: 89%;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
+}
+.food-list-price{
+    font-weight: 400;
+    color: $color-second;
+    padding: 0 12px;
+}
+.food-image {
+    img{
+        margin-top: 40px;
+    }
+}

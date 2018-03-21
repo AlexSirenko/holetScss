@@ -62,7 +62,7 @@ h3 {
   font-size: 38px; }
 
 h4 {
-  font-size: 30px; }
+  font-size: 28px; }
 
 h5 {
   font-size: 20px; }
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", "Times New Roman", Times, serif;
   font-weight: bold; }
 
-h6, label {
+h6, label, .label {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   letter-spacing: 0.08em; }
 
@@ -371,6 +371,12 @@ p {
     width: 3px;
     background: #777; }
 
+.imageWithBorder {
+  display: block;
+  width: 99%;
+  padding: 15px;
+  background-color: #fff !important; }
+
 .slide-wrap {
   width: 100%;
   min-height: 624px;
@@ -517,12 +523,6 @@ p {
 .aboutHotel-wrap__discription .button-wrap {
   margin-top: 35px; }
 
-.aboutHotel__image {
-  display: block;
-  width: 99%;
-  padding: 15px;
-  background-color: #fff !important; }
-
 .roomsAndSuits-wrap {
   padding: 100px 0; }
 
@@ -553,10 +553,6 @@ p {
     display: block;
     width: 100%; }
 
-.post-product__img-wrap:hover::before {
-  transition-duration: .33s;
-  border-width: 4px; }
-
 .post-product__img-wrap::before {
   content: '';
   position: absolute;
@@ -567,6 +563,10 @@ p {
   border: 16px solid #f8f8f8;
   z-index: 1;
   transition-duration: .33s; }
+
+.roomsAndSuits__body__post-product:hover .post-product__img-wrap::before {
+  transition-duration: .33s;
+  border-width: 4px; }
 
 .post-product__body h3 {
   position: relative;
@@ -599,6 +599,62 @@ p {
     line-height: 1; }
   .post-product__price .price__end {
     font-size: 18px; }
+
+.diningAndBar-wrap {
+  padding: 100px 0; }
+
+.diningAndBar-wrap__header {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center; }
+  .diningAndBar-wrap__header p {
+    margin-top: 40px; }
+
+.diningAndBar-menu {
+  margin-top: 60px; }
+  .diningAndBar-menu > div:last-child {
+    margin-top: 50px;
+    text-align: center; }
+
+.food-menu-list {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px; }
+  .food-menu-list li {
+    display: inline-block;
+    padding: 0 15px; }
+    .food-menu-list li a {
+      color: #777; }
+
+.diningAndBar-menu__body {
+  display: flex;
+  margin-top: 50px; }
+  .diningAndBar-menu__body > div {
+    width: 50%; }
+
+.food-list li {
+  margin-top: 26px;
+  padding: 0 24px; }
+  .food-list li > div {
+    display: flex;
+    justify-content: space-between; }
+    .food-list li > div h4 {
+      display: inline-block;
+      line-height: 1.8;
+      font-weight: 300; }
+  .food-list li p {
+    width: 89%;
+    margin-top: 10px;
+    font-size: 14px; }
+
+.food-list-price {
+  font-weight: 400;
+  color: #C19B76;
+  padding: 0 12px; }
+
+.food-image img {
+  margin-top: 40px; }
 
 body {
   padding-top: 95px; }
