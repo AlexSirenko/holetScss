@@ -62,7 +62,7 @@ h3 {
   font-size: 38px; }
 
 h4 {
-  font-size: 28px; }
+  font-size: 30px; }
 
 h5 {
   font-size: 20px; }
@@ -126,14 +126,11 @@ body {
 .bg-cl-second {
   background-color: #f8f8f8; }
 
-.bg-cl-third {
-  background-color: #C19B76; }
-
 h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", "Times New Roman", Times, serif;
   font-weight: bold; }
 
-h6, label, .label {
+h6, label {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   letter-spacing: 0.08em; }
 
@@ -330,15 +327,6 @@ p {
     background-color: #000;
     color: #fff; }
 
-.btn-third {
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff; }
-  .btn-third:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #fff; }
-
 @media (min-width: 992px) {
   .btn {
     padding: 12px 38px;
@@ -383,6 +371,7 @@ p {
     width: 3px;
     background: #777; }
 
+<<<<<<< HEAD
 .imageWithBorder {
   display: block;
   width: 99%;
@@ -426,6 +415,8 @@ p {
   background-color: #f8f8f8;
   border: 1px solid #f8f8f8; }
 
+=======
+>>>>>>> master
 .slide-wrap {
   width: 100%;
   min-height: 624px;
@@ -572,6 +563,12 @@ p {
 .aboutHotel-wrap__discription .button-wrap {
   margin-top: 35px; }
 
+.aboutHotel__image {
+  display: block;
+  width: 99%;
+  padding: 15px;
+  background-color: #fff !important; }
+
 .roomsAndSuits-wrap {
   padding: 100px 0; }
 
@@ -602,6 +599,10 @@ p {
     display: block;
     width: 100%; }
 
+.post-product__img-wrap:hover::before {
+  transition-duration: .33s;
+  border-width: 4px; }
+
 .post-product__img-wrap::before {
   content: '';
   position: absolute;
@@ -612,10 +613,6 @@ p {
   border: 16px solid #f8f8f8;
   z-index: 1;
   transition-duration: .33s; }
-
-.roomsAndSuits__body__post-product:hover .post-product__img-wrap::before {
-  transition-duration: .33s;
-  border-width: 4px; }
 
 .post-product__body h3 {
   position: relative;
@@ -649,6 +646,7 @@ p {
   .post-product__price .price__end {
     font-size: 18px; }
 
+<<<<<<< HEAD
 .diningAndBar-wrap {
   padding: 100px 0; }
 
@@ -678,11 +676,9 @@ p {
 
 .diningAndBar-menu__body {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 50px; }
   .diningAndBar-menu__body > div {
-    width: 50%;
-    min-width: 420px; }
+    width: 50%; }
 
 .food-list li {
   margin-top: 26px;
@@ -865,5 +861,7 @@ p {
   transform: rotate(90deg);
   transform-origin: 50% 50%; }
 
+=======
+>>>>>>> master
 body {
   padding-top: 95px; }
