@@ -1,0 +1,47 @@
+.amenities-wrap {
+    padding: 100px 0;
+}
+
+.amenities__header{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    h2{
+        margin-top: 18px;
+    }
+    p {
+        margin-top: 40px;
+        color: #fff;
+    }
+}
+.amenities-image {
+    img{
+        margin-top: 40px;
+    }
+}
+.amenities__body{
+    display: flex;
+    &>div{
+        width: 49%;
+        margin-top:50px;
+        padding: 0 15px;
+    }
+}
+.amenities-description{
+    color: #fff;
+
+    &>p{
+        margin-top: 28px;
+        color: inherit;
+    }
+    &>h4{
+        margin-top: 22px;
+    }
+    .post-product__price{
+        margin-top: 10px;
+    }
+    .btn-wrap{
+        margin-top: 22px;
+    }
+}

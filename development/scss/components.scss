@@ -32,6 +32,16 @@ $color-btn-hover: #000;
         color: #fff;
     }
 }
+.btn-third{
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        border-color: #fff;
+    }
+}
 @media (min-width: 992px){
     .btn {
         padding: 12px 38px;
@@ -95,4 +105,51 @@ $color-btn-hover: #000;
     width: 99%;
     padding: 15px;
     background-color: #fff !important;
+}
+
+//-----------------------------//
+// GUEST//
+//-----------------------------//
+
+.guest-item {
+    text-align: center;
+    h4{
+        margin-top: 22px;
+        font-weight: 400;
+    }
+    p{
+        margin: 16px auto 0 auto;
+        width: 90%;
+    }
+    .guest-name{
+        margin-top: 20px;
+        font-family: $font-header;
+        color: #000;
+    }
+    .guest-name::before{
+        content: '';
+        display: inline-block;
+        margin-right: 5px;
+        width: 13px;
+        height: 0;
+        border-bottom: 1px solid;
+        vertical-align: middle;
+    }
+}
+.guest-item__img{
+    border-radius: 50%
+}
+
+.emailInput{
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 19px;
+    font-family: $font-text-plain;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #777;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
 }

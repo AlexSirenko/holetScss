@@ -1,0 +1,27 @@
+.subscribe-wrap{
+    padding: 100px 30px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+
+    &>div{
+        min-width: 470px;
+        width: 49%;
+    }
+    p{
+        margin-top: 15px;
+        color: #fff;
+    }
+
+    &>div:last-child{
+        margin-top: 30px;
+        text-align: right;
+        input {
+            width: 55%;
+            margin-right: 10px;
+        }
+       &>*{
+           display: inline-block;
+       }
+    }
+}

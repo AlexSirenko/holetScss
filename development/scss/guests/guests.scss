@@ -1,0 +1,26 @@
+.guests-wrap{
+    padding: 100px 0;
+    text-align: center;
+    &>.btn-wrap{
+        margin-top: 35px;
+    }
+}
+.guests__header{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    h2{
+        margin-top: 18px;
+    }
+}
+
+.guests-items-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:  80px;
+    &>div {
+        width: 30%;
+        margin: 0 20px;
+    }
+}

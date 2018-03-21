@@ -35,9 +35,11 @@
 
 .diningAndBar-menu__body{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     &>div {
         width: 50%;
+        min-width: 420px;
     }
 }
 

@@ -1,0 +1,28 @@
+.location-wrap{
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &>div {
+        margin-top: 20px;
+        min-width: 440px;
+    }
+}
+.location-discription{
+    padding: 0 15px;
+    &>h2{
+        margin-top: 18px;
+    }
+    &>p{
+        margin-top: 40px;
+    }
+}
+.location-range{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    h4{
+        width: 75%;
+        font-weight: 400;
+    }
+}
