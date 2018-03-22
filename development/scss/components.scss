@@ -98,7 +98,6 @@ $color-btn-hover: #000;
         background: #777;
     }
 }
-<<<<<<< HEAD
 
 
 .imageWithBorder{
@@ -154,5 +153,32 @@ $color-btn-hover: #000;
     background-color: #f8f8f8;
     border: 1px solid #f8f8f8;
 }
-=======
->>>>>>> master
+
+.ui-to-top{
+    position: fixed;
+    z-index: 6;
+    width: 58px;
+    height: 58px;
+    bottom: -125%;
+    right: 30px;
+    background-color: $color-second;
+    border-radius: 50%;
+    transition-duration: .33s;
+}
+.ui-to-top:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+.ui-to-top::before{
+    position: absolute;
+    content: '\f176';
+    top: 6px;
+    left: 20px;
+    font-family: "FontAwesome";
+    font-size: 40px;
+    line-height: 1;
+    color: #fff;
+}
+.ui-to-top-active {
+    bottom: 30px;
+}
