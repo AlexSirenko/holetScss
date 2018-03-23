@@ -5,30 +5,35 @@ let submenu1 = navMenu.querySelectorAll('.submenu-1');
 let submenu2 = navMenu.querySelectorAll('.submenu-2');  
 let hugeMenu = navMenu.querySelector('.submenu-huge');
 let allSpans = navMenu.querySelectorAll('span');
-addEventOnSpan();
+
 
 if(window.outerWidth < 992) {
     addSubMenuSmall('submenu-1-small','submenu-2-small','submenu-huge-small');
     addDNoneToMenu();
+    addEventOnSpan();
 }
 
 btnMenu.onclick = function(e){
     navMenu.classList.toggle('active-small-menu');
 };
 
-let isDnone = true;
+let isDnone = false;
 
 window.onresize = function(e){
 
     if(window.outerWidth > 992 && isDnone) {
+        console.log('in remove onresize');
         removeDNoneFromMenu();
         toggleSubmenu('submenu-1-small','submenu-2-small','submenu-huge-small');
+        clearEventOnSpan();
         isDnone = false;
         navMenu.classList.remove('active-small-menu');
     }
 
     if(window.outerWidth < 992 && !isDnone) {
+        console.log('in add onresize');
         addDNoneToMenu();
+        addEventOnSpan();
         toggleSubmenu('submenu-1-small','submenu-2-small','submenu-huge-small');
         isDnone = true;
     }
@@ -53,10 +58,16 @@ function toggleSubmenu(submenu1New, submenu2New, submenuHuge){
 }
 
 function addEventOnSpan(){
+
     for (let i = 0; i < allSpans.length; i++) {
         allSpans[i].onclick = function(){
             this.nextElementSibling.classList.toggle('d-none');
         }
+    }
+}
+function clearEventOnSpan() {  
+    for (let i = 0; i < allSpans.length; i++) {
+        allSpans[i].onclick = null;
     }
 }
 
