@@ -4,6 +4,11 @@
 @import './header/header';
 @import 'components';
 
+
+body {
+    padding-top: 95px;
+}
+
 @import 'slider/slide';
 @import 'orderForm/form';
 @import 'aboutHotel/aboutHotel';
@@ -15,7 +20,5 @@
 @import 'subscribe/subscribe';
 @import 'carouselSidebar/carouselSidebar';
 @import 'footer/footer';
+@import 'media/media';
 
-body {
-    padding-top: 95px;
-}

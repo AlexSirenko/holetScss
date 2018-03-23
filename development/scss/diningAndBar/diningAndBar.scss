@@ -29,18 +29,36 @@
         padding: 0 15px;
         a {
             color: #777;
+            &:hover {
+                cursor: pointer;
+                color: #000;
+            }
         }
     }
 }
 
-.diningAndBar-menu__body{
+.diningAndBar-menu__body {
+    position: relative;
+    min-height: 640px;
+}
+
+.diningAndBar-menu__item{
+    position: absolute;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 50px;
+    transform: scale(1);
+    transition: all .33s ease-out;
     &>div {
         width: 50%;
         min-width: 420px;
     }
+}
+.hidden {
+    visibility: hidden;
+    transform: scale(0);
+    transition-delay: -.2s;
+    
 }
 
 .food-list{

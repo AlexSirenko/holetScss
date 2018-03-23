@@ -1,0 +1,204 @@
+@media (max-width: 1200px){
+    //header
+    .header-wrap, .header{
+        margin: 0;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        padding-left: 0;
+    }
+    .menu-list {
+        margin-left: 10px;
+    }
+
+    //header
+}
+
+@media (max-width: 992px){
+    body {
+        padding-top: 48px;
+    }
+    //header
+    .header {
+        height: 47px;
+        padding: 0;
+        z-index: 6;
+    }
+    .btn-menu-and-logo-wrap{
+        width: 100%;
+        border-bottom: 1px solid rgb(240, 240, 240);
+    }
+    .menu {
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        left: -290px;
+        padding: 62px 0 80px 0;
+        width: 280px;
+        height: 100%;
+        overflow-x: hidden;
+        flex-direction: column;
+        background-color: #fff;
+        .btn-wrap{
+            order: 0;
+            margin: 0;
+            a {
+                width: 250px;
+            }
+        }
+    }
+    .menu-list {
+        width: 100%;
+        margin: 10px 0 0 0;
+
+        &>li {
+            display: block;
+            position: relative  !important;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            &>a{
+                display: inline-block;
+                padding: 10px 0 10px 10px;
+                width: 100%;
+                transition-duration: .33s;
+                &:hover {
+                    cursor: pointer;
+                    background-color: $color-second;
+                    color: #fff;
+                }
+            }
+            &>span{
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                right: 15px;
+                top: 12px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .logo {
+        display: block;
+        z-index: 1;
+        transform: scale(0.8);
+        p{
+            display: none;
+        }
+    }
+    .btn-menu {
+        display: block;
+        z-index: 1;
+    }
+    //header
+
+    //slider
+    //slider
+
+    //form
+    .in-form {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 14px;
+        &>div {
+            width: 100%;
+        }
+        .dateType {
+            .input {
+                background-color: #f8f8f8;
+            }
+        }
+    }
+    //form
+    //aboutHotel
+    .aboutHotel-wrap {
+        &>div {
+            width: 75%;
+            text-align: center;
+        }
+    }
+    .aboutHotel-wrap__discription{
+        p {
+            width: 90%;
+            margin: 20px auto;
+        }
+    }
+    //aboutHotel
+
+    //roomAndSuits
+    .roomsAndSuits__body {
+        flex-direction: column;
+        
+        &>div {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    //roomAndSuits
+
+    //diningAndBar
+
+    .diningAndBar-menu__body{
+        min-height: 1160px;
+    }
+    .diningAndBar-menu__item {
+        flex-direction: column;
+        &>div {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    //diningAndBar
+
+    //amenities
+    .amenities__body {
+        flex-direction: column;
+        &>div:first-child {
+            order: 2;
+        }
+        &>div {
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    //amenities
+}
+
+@media (max-width: 768px){
+    //form
+    .section-form {
+        height: auto;
+        padding: 20px 0;
+    }
+    .form-wrap{
+        top: 0;
+        width: 410px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    }
+    .selectAndButton, .dateType{
+        width: 100%;
+        flex-direction: column;
+    }
+    .dateType {
+        .input {
+            width: 300px;
+        }
+    }
+    .selectAndButton {
+        .selects {
+            width: 100%;
+            justify-content: space-around;
+        }
+        .btn{
+            width: 300px;
+        }
+    }
+    //form
+}

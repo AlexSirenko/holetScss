@@ -2,6 +2,7 @@ $background-submenu-color: #fbfbfb;
 
 %arrow {
     position: relative;
+    content: '\f107';
     display: inline-block;
     font: 400 14px "FontAwesome";
     text-align: center;
@@ -26,14 +27,30 @@ $background-submenu-color: #fbfbfb;
     vertical-align: top;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    flex-direction: row;
+    transition: all .33s ease-out;
     .btn-wrap {
         order: 2;
+        margin-left: 4%;
     }
 
 }
-
+.btn-menu {
+    width: 36px;
+    height: 32px;
+    padding: 0 4px;
+    margin:0 10px;
+    display: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.btn-menu::before {
+    position: relative;
+    content: '\f0c9';
+    font-family: "FontAwesome";
+    font-size: 28px;
+}
 .menu-list {
     margin-left: 60px;
 
@@ -52,7 +69,6 @@ $background-submenu-color: #fbfbfb;
         &>span::after {
             @extend %arrow;
             top: -1px;
-            content: '\f107';
             transition: 0.4s transform ease;
         }
 
@@ -91,7 +107,6 @@ $background-submenu-color: #fbfbfb;
     left: 0;
     z-index: 6;
     margin-left: -18px;
-    
     visibility: hidden;
     opacity: 0;
 
@@ -103,18 +118,22 @@ $background-submenu-color: #fbfbfb;
     font-size: 0.9em;
 
     li {
-        width: 178px;
+        width: 148px;
+        position: relative;
         margin-bottom: 12px;
 
         &:last-child{
             margin-bottom: 0;
         }
 
+        &>span{
+            position: absolute;
+            width: 10px;
+            top: 0;
+            right: 20px;
+        }
         &>span::after {
             @extend %arrow;
-            content: '\f105';
-            top: 1px;
-            left: 2px;
         }
 
         &:hover>*{
@@ -126,9 +145,12 @@ $background-submenu-color: #fbfbfb;
     }
 
 }
+
+
+
 .submenu-2 {
     @extend %submenu;
-    left:101.5%;
+    left:122%;
     margin-top: -17px;
     visibility: hidden;
     opacity: 0;
@@ -184,4 +206,110 @@ $background-submenu-color: #fbfbfb;
             color: $color-second;
         }
     }
+}
+
+.btn-menu-and-logo-wrap {
+    display: flex;
+    width: auto;
+    padding-top: 4px;
+    z-index: 6;
+    background-color: #fff;
+}
+//submenu for media
+%submenu-small-hover{
+    background-color: $color-second;
+    color: #fff;
+}
+.submenu-1-small{
+    font-size: 0.9em;
+    font-family: $font-text-plain;
+    text-transform: none;
+    transition-duration: .33s;
+    *{
+        color: $font-color-nav;
+    }
+
+    &>li{
+        position: relative;
+        &>div {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 0 12px 15px;
+            transition-duration: .33s;
+            &:hover {
+                cursor: pointer;
+                background-color: $color-second;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        &>span{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 15px;
+            top: 12px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &>span::after {
+            @extend %arrow;
+        }
+
+    }
+}
+
+.submenu-2-small{
+    font-family: $font-text-plain;
+    text-transform: none;
+    &>li{
+        padding: 9px 0;
+        transition-duration: .33s;
+        &:hover {
+            background-color: $color-second;
+            a {
+                color: #fff;
+            }
+        }
+        &>a {
+            padding: 0 56px 0 30px;
+        }
+    }
+}
+
+.submenu-huge-small {
+
+
+    .submenu-huge__header{
+        margin: 0;
+        font-size: 1em;
+        text-transform: none;
+        padding: 6px 0 6px 10px;
+    }
+    .submenu-huge__list{
+        text-transform: none;
+        font-size: 0.9em;
+
+        &>li{
+            margin: 0;
+            padding:8px 0 8px 15px;
+            a {
+                color: $font-color-nav;
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: $color-second;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+
+.active-small-menu {
+    left: 0 !important;
 }

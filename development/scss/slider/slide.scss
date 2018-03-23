@@ -1,13 +1,13 @@
 .slide-wrap {
-    width: 100%;
     min-height: 624px;
     height: 624px/ 766px * 100%;
     background: url('../images/slider/slider-slide-1.jpg') no-repeat;
     background-size: 100% 100%; 
 }
+.slider-wrap {
+    text-align: center;
+}
 .slider {  
-    width: $max-width;
-    margin: 0 auto;
     padding: 100px 0 380px;
 }
 

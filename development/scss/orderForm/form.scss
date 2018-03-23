@@ -1,26 +1,7 @@
 .section-form {
     width: 100%;
     background-color: #fff;
-}
-
-@media (min-width: 768px){
-    .section-form {
-        height: 0;
-    }
-    .form-wrap::after{
-        content: '';
-        position: absolute;
-        height: 203px;
-        background-image: url('../images/form/shadow.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        z-index: -1;
-        left: -49px;
-        right: -49px;
-        bottom: -88px;
-        width: 100%;
-        
-    }
+    height: 0;
 }
 
 .form-wrap {
@@ -35,7 +16,20 @@
         background-color: #fff;
     }
 }
-
+.form-wrap::after{
+    content: '';
+    position: absolute;
+    height: 203px;
+    background-image: url('../images/form/shadow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    left: -49px;
+    right: -49px;
+    bottom: -88px;
+    width: 100%;
+    
+}
 %displayflex{
     display: flex;
     justify-content: space-around;

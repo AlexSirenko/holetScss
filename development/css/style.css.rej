@@ -1,0 +1,222 @@
+diff a/development/css/style.css b/development/css/style.css	(rejected hunks)
+@@ -377,6 +389,43 @@
+   padding: 15px;
+   background-color: #fff !important; }
+ 
++.guest-item {
++  text-align: center; }
++  .guest-item h4 {
++    margin-top: 22px;
++    font-weight: 400; }
++  .guest-item p {
++    margin: 16px auto 0 auto;
++    width: 90%; }
++  .guest-item .guest-name {
++    margin-top: 20px;
++    font-family: "Playfair Display", "Times New Roman", Times, serif;
++    color: #000; }
++  .guest-item .guest-name::before {
++    content: '';
++    display: inline-block;
++    margin-right: 5px;
++    width: 13px;
++    height: 0;
++    border-bottom: 1px solid;
++    vertical-align: middle; }
++
++.guest-item__img {
++  border-radius: 50%; }
++
++.emailInput {
++  display: block;
++  width: 100%;
++  min-height: 50px;
++  padding: 12px 19px;
++  font-family: "Roboto", Helvetica, Arial, sans-serif;
++  font-size: 14px;
++  font-weight: 400;
++  line-height: 24px;
++  color: #777;
++  background-color: #f8f8f8;
++  border: 1px solid #f8f8f8; }
++
+ .slide-wrap {
+   width: 100%;
+   min-height: 624px;
+@@ -629,9 +678,11 @@
+ 
+ .diningAndBar-menu__body {
+   display: flex;
++  flex-wrap: wrap;
+   margin-top: 50px; }
+   .diningAndBar-menu__body > div {
+-    width: 50%; }
++    width: 50%;
++    min-width: 420px; }
+ 
+ .food-list li {
+   margin-top: 26px;
+@@ -656,5 +707,163 @@
+ .food-image img {
+   margin-top: 40px; }
+ 
++.amenities-wrap {
++  padding: 100px 0; }
++
++.amenities__header {
++  width: 65%;
++  margin: 0 auto;
++  text-align: center;
++  color: #fff; }
++  .amenities__header h2 {
++    margin-top: 18px; }
++  .amenities__header p {
++    margin-top: 40px;
++    color: #fff; }
++
++.amenities-image img {
++  margin-top: 40px; }
++
++.amenities__body {
++  display: flex; }
++  .amenities__body > div {
++    width: 49%;
++    margin-top: 50px;
++    padding: 0 15px; }
++
++.amenities-description {
++  color: #fff; }
++  .amenities-description > p {
++    margin-top: 28px;
++    color: inherit; }
++  .amenities-description > h4 {
++    margin-top: 22px; }
++  .amenities-description .post-product__price {
++    margin-top: 10px; }
++  .amenities-description .btn-wrap {
++    margin-top: 22px; }
++
++.guests-wrap {
++  padding: 100px 0;
++  text-align: center; }
++  .guests-wrap > .btn-wrap {
++    margin-top: 35px; }
++
++.guests__header {
++  width: 65%;
++  margin: 0 auto;
++  text-align: center; }
++  .guests__header h2 {
++    margin-top: 18px; }
++
++.guests-items-wrap {
++  display: flex;
++  flex-wrap: wrap;
++  justify-content: space-around;
++  margin-top: 80px; }
++  .guests-items-wrap > div {
++    width: 30%;
++    margin: 0 20px; }
++
++.location-wrap {
++  padding: 100px 0;
++  display: flex;
++  justify-content: space-around;
++  flex-wrap: wrap; }
++  .location-wrap > div {
++    margin-top: 20px;
++    min-width: 440px; }
++
++.location-discription {
++  padding: 0 15px; }
++  .location-discription > h2 {
++    margin-top: 18px; }
++  .location-discription > p {
++    margin-top: 40px; }
++
++.location-range {
++  display: flex;
++  justify-content: space-between;
++  margin-top: 48px; }
++  .location-range h4 {
++    width: 75%;
++    font-weight: 400; }
++
++.subscribe-wrap {
++  padding: 100px 30px;
++  display: flex;
++  justify-content: space-around;
++  color: #fff; }
++  .subscribe-wrap > div {
++    min-width: 470px;
++    width: 49%; }
++  .subscribe-wrap p {
++    margin-top: 15px;
++    color: #fff; }
++  .subscribe-wrap > div:last-child {
++    margin-top: 30px;
++    text-align: right; }
++    .subscribe-wrap > div:last-child input {
++      width: 55%;
++      margin-right: 10px; }
++    .subscribe-wrap > div:last-child > * {
++      display: inline-block; }
++
++.crousel-sidebar-wrap {
++  display: flex; }
++
++.carousel-item {
++  position: relative;
++  width: 225px;
++  height: 225px; }
++
++.carousel-item-hover {
++  position: absolute;
++  z-index: 3;
++  width: 100%;
++  height: 100%;
++  top: 0;
++  left: 0;
++  background-color: #C19B76;
++  opacity: 0;
++  transition: all .33s ease; }
++
++.carousel-item-hover:hover {
++  cursor: pointer;
++  opacity: 0.8;
++  transition: all .33s ease; }
++  .carousel-item-hover:hover .cross-picture {
++    transition: all .33s ease;
++    transform: scale(3); }
++
++.carousel-img {
++  z-index: 1;
++  width: 100%;
++  height: 100%;
++  background: url("../images/carouselSidebar/img1.jpg") no-repeat;
++  background-size: 100% 100%; }
++
++.cross-picture {
++  position: absolute;
++  z-index: -1;
++  top: 40%;
++  right: 40%;
++  bottom: 40%;
++  left: 40%;
++  display: flex;
++  justify-content: center;
++  transition: all .33s ease; }
++
++.cross {
++  position: absolute;
++  width: 10px;
++  height: 1px;
++  top: 50%;
++  background-color: #fff; }
++
++.cross-vertical {
++  transform: rotate(90deg);
++  transform-origin: 50% 50%; }
++
+ body {
+   padding-top: 95px; }

@@ -17,13 +17,16 @@
     <div class="header-container">
         <div class="header-wrap">
             <header id="header-nav" class='header header-top'>
-                <div class="logo">
-                    <a href='#'>
-                        <img src="images/header/logo.png">
-                        <p>BEST HOTEL</p>
-                    </a>
+                <div class="btn-menu-and-logo-wrap">
+                    <div id ="btn-menu" class="btn-menu"></div>
+                    <div class="logo">
+                        <a href='#'>
+                            <img src="images/header/logo.png">
+                            <p>BEST HOTEL</p>
+                        </a>
+                    </div>
                 </div>
-                <nav class="menu">
+                <nav id="nav-menu" class="menu">
                     <div class="btn-wrap ">
                         <a href="#" class="btn">book a room</a>
                     </div>
@@ -34,9 +37,9 @@
                             <span></span>
                             <ul class="submenu-1">
                                 <li>
-                                    <a href="#">Headers</a>
+                                    <div><a href="#">Headers</a></div>
                                     <span></span>
-                                    <ul class="submenu-2">
+                                    <ul class="submenu-2 ">
                                         <li>
                                             <a href="#">Header Default</a>
                                         </li>
@@ -49,9 +52,9 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Footers</a>
+                                    <div><a href="#">Footers</a></div>
                                     <span></span>
-                                    <ul class="submenu-2">
+                                    <ul class="submenu-2 ">
                                         <li>
                                             <a href="#">Footer Corporate</a>
                                         </li>
@@ -65,7 +68,7 @@
                         <li class="pos-static">
                             <a href="">pages</a>
                             <span></span>
-                            <ul class="submenu-huge">
+                            <ul class="submenu-huge ">
                                 <li>
                                     <p class="submenu-huge__header">General</p>
                                     <ul class="submenu-huge__list">
@@ -148,13 +151,13 @@
                             <span></span>
                             <ul class="submenu-1">
                                 <li>
-                                    <a href="#">Single Room</a>
+                                    <div><a href="#">Single Room</a></div>
                                 </li>
                                 <li>
-                                    <a href="#">Rooms Search Results</a>
+                                    <div><a href="#">Rooms Search Results</a></div>
                                 </li>
                                 <li>
-                                    <a href="#">Checkout</a>
+                                   <div><a href="#">Checkout</a></div>
                                 </li>
                             </ul>
                         </li>
@@ -167,9 +170,9 @@
                         <li>
                             <a href="#">blog</a>
                             <span></span>
-                            <ul class="submenu-1">
+                            <ul class="submenu-1 .">
                                 <li>
-                                    <a href="#">Post Formats</a>
+                                    <div><a href="#">Post Formats</a></div>
                                     <span></span>
                                     <ul class="submenu-2">
                                         <li>
@@ -202,9 +205,9 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Blog Layouts</a>
+                                    <div><a href="#">Blog Layouts</a></div>
                                     <span></span>
-                                    <ul class="submenu-2">
+                                    <ul class="submenu-2 ">
                                         <li>
                                             <a href="#">Classic Blog</a>
                                         </li>
@@ -220,7 +223,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Sidebar</a>
+                                   <div> <a href="#">Sidebar</a></div>
                                     <span></span>
                                     <ul class="submenu-2">
                                         <li>
@@ -245,25 +248,27 @@
             </header>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="slide-wrap">
-            <div class="slider">
-                <div class="slide-text-contain">
-                    <ul class="stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <h6>welcome to</h6>
-                    <h1>Modern Hotel</h1>
-                    <p>Indianapolis’ mornings are beautiful...especially if you’re waking up in one
-                        <br> of our hotel’s refined rooms!</p>
-                </div>
-                <div class="slider__switch">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <div class="container-fluid slide-wrap">
+        <div class="container">
+            <div class="slider-wrap">
+                <div class="slider">
+                    <div class="slide-text-contain">
+                        <ul class="stars">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <h6>welcome to</h6>
+                        <h1>Modern Hotel</h1>
+                        <p>Indianapolis’ mornings are beautiful...especially if you’re waking up in one
+                            <br> of our hotel’s refined rooms!</p>
+                    </div>
+                    <div class="slider__switch">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -442,59 +447,136 @@
                 <div class="diningAndBar-menu">
                     <ul class="food-menu-list label">
                         <li>
-                            <a href="#">mains</a>
+                            <a data-div-id="item-1">mains</a>
                         </li>
                         <li>
-                            <a href="#">desserts</a>
+                            <a data-div-id="item-2">desserts</a>
                         </li>
                         <li>
-                            <a href="#">drinks</a>
+                            <a data-div-id="item-3">drinks</a>
                         </li>
                     </ul>
                     <div class="diningAndBar-menu__body">
-                        <div class="food-discription">
-                            <ul class="food-list">
-                                <li>
-                                    <div>
-                                        <h4>Crumbed Whiting</h4>
-                                        <h4 class="food-list-price">$45.89</h4>
-                                    </div>
-                                    <p>Fresh local baby whiting fillets in a sesame and parsley crumb s/w chips salad lemon
-                                        and tartare... This is a lunch that will leave you asking for more!</p>
+                        <div id="item-1" class="diningAndBar-menu__item ">
+                            <div class="food-discription">
+                                <ul class="food-list">
+                                    <li>
+                                        <div>
+                                            <h4>Crumbed Whiting</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Fresh local baby whiting fillets in a sesame and parsley crumb s/w chips salad lemon
+                                            and tartare... This is a lunch that will leave you asking for more!</p>
 
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Chicken Parmagiana</h4>
-                                        <h4 class="food-list-price">$45.89</h4>
-                                    </div>
-                                    <p>Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped with a garlic
-                                        seafood sauce & served with garden salad & steak fries or with steamed vegetables
-                                        and potato.</p>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Chicken Parmagiana</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Chicken Surf & Turf $31 Char grilled garlic chicken breast fillet topped with a garlic
+                                            seafood sauce & served with garden salad & steak fries or with steamed vegetables
+                                            and potato.</p>
 
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Gluten Free Surf & Turf</h4>
-                                        <h4 class="food-list-price">$45.89</h4>
-                                    </div>
-                                    <p>Char grilled Scotch fillet 300gm topped with a garlic seafood sauce & served with garden
-                                        salad & steak fries or with steamed veggies roast chat potato.</p>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Gluten Free Surf & Turf</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Char grilled Scotch fillet 300gm topped with a garlic seafood sauce & served with garden
+                                            salad & steak fries or with steamed veggies roast chat potato.</p>
 
-                                </li>
-                                <li>
-                                    <div>
-                                        <h4>Asian noodle salad</h4>
-                                        <h4 class="food-list-price">$45.89</h4>
-                                    </div>
-                                    <p>Julliene veggies & rice noodles with mint coriander & cashew nuts nestled in mixed leaves
-                                        and finished with sesame oil and a lime dressing.</p>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Asian noodle salad</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Julliene veggies & rice noodles with mint coriander & cashew nuts nestled in mixed leaves
+                                            and finished with sesame oil and a lime dressing.</p>
 
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="food-image">
+                                <img class="imageWithBorder" src="images/diningAndBar/dining-and-bar-1.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="food-image">
-                            <img class="imageWithBorder" src="images/diningAndBar/dining-and-bar-1.jpg" alt="">
+                        <div id="item-2" class="diningAndBar-menu__item hidden">
+                            <div class="food-discription">
+                                <ul class="food-list">
+                                    <li>
+                                        <div>
+                                            <h4>Organic Yoghurt Panna Cotta</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Blackcurrant & limoncello compote, crunchy spiced crumble & lemon zest</p>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Jamie’s Favorite Orange Blossom Poleta Cake</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>Served with whipped crème fraîche, fresh orange & pomegranate                                      </p>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Vin Sano Tiramisu</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>The classic Italian dessert with vin santo, chocolate shavings & orange zest</p>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="food-image">
+                                <img class="imageWithBorder" src="images/diningAndBar/item2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div id="item-3" class="diningAndBar-menu__item hidden">
+                            <div class="food-discription">
+                                <ul class="food-list">
+                                    <li>
+                                        <div>
+                                            <h4>Mezzo e mezzo</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>A beautiful blend of Martini Rosso, Nardini Rabarbaro rhubarb liqueur & a splash of soda</p>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Aperol Spritz</h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>A refreshing mix of Aperol, soda & Jamie’s Prosecco</p>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Elderflower Spritz
+                                                </h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>St Germain elderflower liqueur, Jamie’s Prosecco & soda</p>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <h4>Bellini </h4>
+                                            <h4 class="food-list-price">$45.89</h4>
+                                        </div>
+                                        <p>White peach purée & Jamie’s Prosecco</p>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="food-image">
+                                <img class="imageWithBorder" src="images/diningAndBar/dining-and-bar-2.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -741,6 +823,7 @@
     <script src="js/menu.js"></script>
     <script src="js/ui_top_top.js"></script>
     <script src="js/scrollMenuAndArrow.js"></script>
+    <script src="js/diningAndBar.js"></script>
 
 </body>
 
